@@ -22,7 +22,7 @@ python hash_finder.py
 
 ---
 
-### 2. **cracker.py** 🔓
+### 2. **password_cracker.py** 🔓
 This script helps users crack SHA-1 and MD5 hashes by comparing them against a list of potential passwords stored in `file.txt`.
 
 #### Key Features:
@@ -32,7 +32,7 @@ This script helps users crack SHA-1 and MD5 hashes by comparing them against a l
 
 #### Example Usage:
 ```bash
-python cracker.py
+python password_cracker.py
 ```
 🔑 **Output:** The program will indicate if the password is found or not.
 
@@ -68,7 +68,7 @@ pyfiglet
 3. Run any of the scripts as needed:
    ```bash
    python hash_finder.py
-   python cracker.py
+   python password_cracker.py
    ```
 
 ---

@@ -1,91 +1,85 @@
-# 🐍 Hash Finder and Cracker 🔍
+# 🛡️ Password Security Tools 🔐
 
-Welcome to the **Hash Finder** and **Hash Cracker** project! This repository contains two Python scripts that provide functionalities for hashing strings and cracking hashes. Below is a brief overview of each script.
 
----
+## 🌟 Overview
+Welcome to the **Password Security Tools** project! This suite of tools is designed to enhance your password security practices. It includes a **Password Cracker**, **Hash Finder**, **Password Strength Checker**, and a **Masking** feature to demonstrate how to protect sensitive password data effectively.
 
-## 🛠️ Files Included
+## 🚀 Features
 
-### 1. **hash_finder.py** 🔍
-This script allows users to generate SHA-1 and MD5 hashes from input strings. It also saves the generated hashes to a file named `hash_output.txt`.
+### 1. 🔑 Password Cracker
+- **Functionality**: Input a hash value, select the hash type, and attempt to find the corresponding password from a predefined list of passwords stored in a text file.
+- **Supported Hash Types**: 
+  - SHA1
+  - MD5
+  - SHA256
+  - SHA512
+  - BCRYPT (demonstration purposes only)
 
-#### Key Features:
-- Choose between SHA-1 and MD5 hash generation.
-- User-friendly command-line interface.
-- Saves results to `hash_output.txt` 📁.
+### 2. 🕵️ Hash Finder
+- **Functionality**: Enter a word and select a hashing algorithm to generate its corresponding hash.
+- **Masking Option**: Optionally generate a masked version of the hash that obscures the original hash value.
+- **About Masking**: Masking is a technique used to obscure the original hash, making it difficult to reverse-engineer. 🛡️
 
-#### Example Usage:
-```bash
-python hash_finder.py
-```
-🌟 **Output:** Displays the hash value for the input string.
+### 3. 💪 Password Strength Checker
+- **Functionality**: Input a password to check its strength based on criteria such as length, and character variety (letters, numbers, and special characters).
+- **Strength Ratings**: 
+  - Weak 🚫
+  - Moderate ⚠️
+  - Strong 💪
+- **Suggestions**: Generates stronger password suggestions if the entered password is deemed weak. ✨
 
----
+## 📦 Installation
 
-### 2. **password_cracker.py** 🔓
-This script helps users crack SHA-1 and MD5 hashes by comparing them against a list of potential passwords stored in `file.txt`.
+### Prerequisites
+- Python 3.x 🐍
+- Streamlit 🌐
+- Required libraries: `hashlib`, `string`, `random`
 
-#### Key Features:
-- Supports cracking both SHA-1 and MD5 hashes.
-- Displays attempts and results on the console.
-- Reports whether the password was found or not.
-
-#### Example Usage:
-```bash
-python password_cracker.py
-```
-🔑 **Output:** The program will indicate if the password is found or not.
-
----
-
-## 🚀 Getting Started
-
-To use the scripts, make sure you have Python installed on your machine. You can install the required packages using the `requirements.txt` file. 
-
-### 🧑‍💻 Install Dependencies
-1. Make sure you have `pip` installed.
-2. Install the required packages by running:
+### Steps
+1. **Clone the repository**:
    ```bash
-   pip install -r requirements.txt
+   git clone https://github.com/YourUsername/Password_Security_Tools.git
+   cd Password_Security_Tools
    ```
 
-### 📝 `requirements.txt`
-Here are the packages included in the `requirements.txt`:
+2. **Create a virtual environment** (optional but recommended):
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
+
+3. **Install required libraries**:
+   ```bash
+   pip install streamlit
+   ```
+
+## 🛠️ Usage
+1. **Run the application**:
+   ```bash
+   streamlit run app.py
+   ```
+
+2. **Open your web browser** and navigate to `http://localhost:8501`. 🌍
+
+3. **Choose the desired tool** from the navigation sidebar and follow the on-screen instructions. 📋
+
+## 📁 File Structure
 ```
-colorama==0.4.3
-pyfiglet
+Password_Security_Tools/
+│
+├── app.py                # Main application script
+├── file.txt              # Text file containing potential passwords for cracking
+├── README.md             # This README file
+└── requirements.txt      # This includes the packages and libraries necessary for the program to run
 ```
 
-### 🧑‍💻 Running the Scripts
-1. Clone this repository to your local machine:
-   ```bash
-   git clone https://github.com/yourusername/Password_Cracker.git
-   ```
-2. Navigate into the directory:
-   ```bash
-   cd Password_Cracker
-   ```
-3. Run any of the scripts as needed:
-   ```bash
-   python hash_finder.py
-   python password_cracker.py
-   ```
+## 🤝 Contributing
+Contributions are welcome! If you have suggestions for improvements or new features, feel free to open an issue or submit a pull request. 💡
 
----
+## 📝 License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-## 📄 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🎉 Acknowledgments
-Thanks to the open-source community for providing great libraries like **Colorama**! ❤️
-
----
-
-## 📞 Contact
-For any questions or contributions, feel free to reach out!
-
----
+## 🙏 Acknowledgments
+- Special thanks to the open-source community for the libraries and tools that made this project possible. 🎉
 
 Happy coding! 🐍💻✨

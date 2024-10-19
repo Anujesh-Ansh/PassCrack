@@ -38,8 +38,8 @@ Welcome to the **Password Security Tools** project! This suite of tools is desig
 ### Steps
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/YourUsername/Password_Security_Tools.git
-   cd Password_Security_Tools
+   git clone https://github.com/YourUsername/PassCrack.git
+   cd PassCrack
    ```
 
 2. **Create a virtual environment** (optional but recommended):

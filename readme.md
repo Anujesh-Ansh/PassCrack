@@ -40,10 +40,20 @@ python cracker.py
 
 ## 🚀 Getting Started
 
-To use the scripts, make sure you have Python installed on your machine. You may also need to install the `colorama` package for color support:
+To use the scripts, make sure you have Python installed on your machine. You can install the required packages using the `requirements.txt` file. 
 
-```bash
-pip install colorama
+### 🧑‍💻 Install Dependencies
+1. Make sure you have `pip` installed.
+2. Install the required packages by running:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### 📝 `requirements.txt`
+Here are the packages included in the `requirements.txt`:
+```
+colorama==0.4.3
+pyfiglet
 ```
 
 ### 🧑‍💻 Running the Scripts
@@ -79,5 +89,3 @@ For any questions or contributions, feel free to reach out!
 ---
 
 Happy coding! 🐍💻✨
-```
-

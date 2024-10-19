@@ -50,7 +50,7 @@ Welcome to the **Password Security Tools** project! This suite of tools is desig
 
 3. **Install required libraries**:
    ```bash
-   pip install streamlit
+   pip install -r requirements.txt
    ```
 
 ## 🛠️ Usage
